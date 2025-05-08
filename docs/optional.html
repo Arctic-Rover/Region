@@ -5,23 +5,37 @@
     <title>АРКТИКАХОД | Заключение</title>
     <link rel="stylesheet" href="css/style.css">
     </head>
+    <script>
+        const nav = document.querySelector('.navbar');
+        const toggle = document.querySelector('.menu-toggle');
+      
+        toggle.addEventListener('click', () => {
+          nav.classList.toggle('open');
+        });
+      </script>      
     <body>
-    <header>
-        <nav>
-        <a href="index.html" class="logo">АРКТИКАХОД</a>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="about.html">О проекте</a></li>
-            <li><a href="team.html">Команда</a></li>
-            <li><a href="organization.html">Организационный этап</a></li>
-            <li><a href="technology.html">Технологии</a></li>
-            <li><a href="experiment.html">Эксперимент</a></li>
-            <li><a href="conclusion.html">Заключение</a></li>
-            <li><a href="optional.html">Дополнительно</a></li>
-
-        </ul>
-        </nav>
-    </header>
+        <header>
+            <nav class="navbar">
+              <a href="index.html" class="logo">АРКТИКАХОД</a>
+              <!-- кнопка‐гамбургер -->
+              <button class="menu-toggle" aria-label="Открыть меню">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </button>
+              <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="team.html">Команда</a></li>
+                <li><a href="organization.html">Орг.-этап</a></li>
+                <li><a href="technology.html">Технологии</a></li>
+                <li><a href="experiment.html">Эксперимент</a></li>
+                <li><a href="conclusion.html">Заключение</a></li>
+                <li><a href="optional.html">Дополнительно</a></li>
+              </ul>
+            </nav>
+          </header>
+          
 
     <section class="section-blue">
         <h1>ДОПОЛНИТЕЛЬНО</h1>

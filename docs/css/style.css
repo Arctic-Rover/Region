@@ -29,4 +29,53 @@ text-decoration: underline;
     display: block;   /* чтобы margin: auto работал */
     margin: 1rem auto;/* центрируем и даём отступы сверху/снизу */
   }
+
+/* 1) Сброс стилей кнопки */
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* по умолчанию скрыта */
+  }
+  
+  /* полоски гамбургера */
+  .menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #eee;
+    transition: 0.3s;
+  }
+  
+  /* базовое меню */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* адаптив */
+  @media (max-width: 768px) {
+    /* показываем кнопку */
+    .menu-toggle {
+      display: block;
+    }
+    /* прячем пункты меню */
+    .nav-list {
+      position: absolute;
+      top: 60px;        /* чуть ниже шапки */
+      right: 0;
+      background: #222;
+      flex-direction: column;
+      width: 200px;
+      display: none;    /* спрятано */
+      padding: 1rem;
+    }
+    /* когда у nav есть класс .open — показываем */
+    .navbar.open .nav-list {
+      display: flex;
+    }
+  }
+  
   
