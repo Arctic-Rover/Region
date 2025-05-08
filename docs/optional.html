@@ -1,72 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-    <meta charset="UTF-8">
-    <title>АРКТИКАХОД | Заключение</title>
-    <link rel="stylesheet" href="css/style.css">
-    </head>
-    <script>
-        const nav = document.querySelector('.navbar');
-        const toggle = document.querySelector('.menu-toggle');
-      
-        toggle.addEventListener('click', () => {
-          nav.classList.toggle('open');
-        });
-      </script>      
-    <body>
-        <header>
-            <nav class="navbar">
-              <a href="index.html" class="logo">АРКТИКАХОД</a>
-              <!-- кнопка‐гамбургер -->
-              <button class="menu-toggle" aria-label="Открыть меню">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </button>
-              <ul class="nav-list">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О проекте</a></li>
-                <li><a href="team.html">Команда</a></li>
-                <li><a href="organization.html">Организационный этап</a></li>
-                <li><a href="technology.html">Технологии</a></li>
-                <li><a href="experiment.html">Эксперимент</a></li>
-                <li><a href="conclusion.html">Заключение</a></li>
-                <li><a href="optional.html">Дополнительно</a></li>
-              </ul>
-            </nav>
-          </header>
-          
+<head>
+  <meta charset="UTF-8">
+  <title>АРКТИКАХОД | Дополнительно</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">АРКТИКАХОД</a>
+      <button class="menu-toggle" aria-label="Открыть меню">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О проекте</a></li>
+        <li><a href="team.html">Команда</a></li>
+        <li><a href="organization.html">Организационный этап</a></li>
+        <li><a href="technology.html">Технологии</a></li>
+        <li><a href="experiment.html">Эксперимент</a></li>
+        <li><a href="conclusion.html">Заключение</a></li>
+        <li><a href="optional.html">Дополнительно</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="section-blue">
-        <h1>ДОПОЛНИТЕЛЬНО</h1>
-    </section>
+  <section class="section-blue">
+    <h1>ДОПОЛНИТЕЛЬНО</h1>
+  </section>
 
-    <div class="content">
-        <h2>Пояснительная записка:</h2>
-        <!-- Нужно сделать ссылку на файл белой-->
-        <a href="https://docs.google.com/document/d/1dIWPPpm2H_ReKX785949SW9QRJqE-78r/edit?usp=sharing&ouid=103938323985172680688&rtpof=true&sd=true">Ссылка на файл "Отчет ШП-11.docx"</a>
-        <h2>Исходный код и нейросети:</h2>
-        <a href="https://drive.google.com/drive/folders/1nQamrxobIDvrT9-dId0PmULZ2eIwuyvk?usp=sharing" target="_blank">
+  <div class="content">
+    <h2>Пояснительная записка:</h2>
+    <p>
+      <a href="https://docs.google.com/document/d/1dIWPPpm2H_ReKX785949SW9QRJqE-78r/edit?usp=sharing&ouid=103938323985172680688&rtpof=true&sd=true" target="_blank" rel="noopener">
+        Ссылка на файл "Отчет ШП-11.docx"
+      </a>
+    </p>
+
+    <h2>Исходный код и нейросети:</h2>
+    <p>
+      <a href="https://drive.google.com/drive/folders/1nQamrxobIDvrT9-dId0PmULZ2eIwuyvk?usp=sharing" target="_blank" rel="noopener">
         Google Drive – Папка с кодом
-        </a>
-        <h2>Рендеры и фото робота:</h2>
-        <a href="images/robot_render_2.jpg" target="_blank">
-            <img src="images/robot_render_2.jpg" alt="Рендер 2">
-        </a>
-        <h2>Список используемой литературы</h2>
-        <ol>
-            <li>Боровская Е. В. Основы искусственного интеллекта : учебное пособие / Е. В. Боровская, Н. А. Давыдова. — 4-е изд., электрон. — М. : Лаборатория знаний, 2020. — 130 с. — (Педагогическое образование).</li>
-            <li>Искусственный интеллект и робототехника [Текст] : учеб. пособие / Б. В. Костров, В. Н. Ручкин, В. А. Фулин. — М. : Диалог-МИФИ, 2008 (Подольск (Моск. обл.)). — 224 с. : ил.</li>
-            <li>Серрано Луис. Грокаем машинное обучение. — СПб. : Питер, 2024. — 512 с. : ил. — (Серия «Библиотека программиста»).</li>
-            <li>Петин В. А. Микрокомпьютеры Raspberry Pi. Практическое руководство. — СПб. : БХВ-Петербург, 2015. — 240 с.</li>
-            <li>Юревич Е. И. Основы робототехники. — Ленинград : Издательство «Машиностроение», Ленинградское отделение, 1985. — 271 с.</li>
-            <li>Кабалдин Ю. Г., Киселев А. В., Шатагин Д. А., Желонкин М. В., Головин А. А. Автономная робототехническая система с интеллектуальной диагностикой технического состояния для условий Арктики и Крайнего Севера / Ю. Г. Кабалдин и др.; под ред. Ю. Г. Кабалдина. — М. : Инновационное машиностроение, 2018. — 144 с.</li>
-            <li>Андрейчук А. П., Гурко А. В. Тенденции внедрения технологий искусственного интеллекта и робототехники в Арктике: опыт Российской Федерации // Горный информационно-аналитический бюллетень. — 2022. — № 10-2. — С. 24—38. DOI: 10.25018/0236_1493_2022_102_0_24.</li>
-            <li>Способ дистанционного измерения толщины льда, способ дистанционного измерения прочности льда, устройство для дистанционного измерения толщины льда, устройство для дистанционного измерения прочности льда и дистанционный измерительный модуль: пат. RU 2017110697 A : заявл. 30.03.2017; опубл. 01.10.2018.</li>
-            <li>Сайт: magazine.neftegaz — <a href="https://magazine.neftegaz.ru/articles/arktika/505550-osvoenie-arktiki-problemy-i-resheniya" target="_blank" rel="noopener">URL</a>: (дата обращения 10.03.2025).</li>
-        </ol>
-    </section>
+      </a>
+    </p>
+
+    <h2>Рендеры и фото робота:</h2>
+    <p>
+      <a href="images/robot_render_2.jpg" target="_blank">
+        <img src="images/robot_render_2.jpg" alt="Рендер 2">
+      </a>
+    </p>
+
+    <h2>Список используемой литературы</h2>
+    <ol>
+      <li>
+        Боровская Е. В. Основы искусственного интеллекта : учебное пособие / Е. В. Боровская, Н. А. Давыдова. — 4-е изд., электрон. — М. : Лаборатория знаний, 2020. — 130 с. — (Педагогическое образование).
+      </li>
+      <li>
+        Искусственный интеллект и робототехника [Текст] : учеб. пособие / Б. В. Костров, В. Н. Ручкин, В. А. Фулин. — М. : Диалог-МИФИ, 2008 (Подольск (Моск. обл.)). — 224 с. : ил.
+      </li>
+      <li>
+        Серрано Луис. Грокаем машинное обучение. — СПб. : Питер, 2024. — 512 с. : ил. — (Серия «Библиотека программиста»).
+      </li>
+      <li>
+        Петин В. А. Микрокомпьютеры Raspberry Pi. Практическое руководство. — СПб. : БХВ-Петербург, 2015. — 240 с.
+      </li>
+      <li>
+        Юревич Е. И. Основы робототехники. — Ленинград : Издательство «Машиностроение», Ленинградское отделение, 1985. — 271 с.
+      </li>
+      <li>
+        Кабалдин Ю. Г., Киселев А. В., Шатагин Д. А., Желонкин М. В., Головин А. А. Автономная робототехническая система с интеллектуальной диагностикой технического состояния для условий Арктики и Крайнего Севера / Ю. Г. Кабалдин и др.; под ред. Ю. Г. Кабалдина. — М. : Инновационное машиностроение, 2018. — 144 с.
+      </li>
+      <li>
+        Андрейчук А. П., Гурко А. В. Тенденции внедрения технологий искусственного интеллекта и робототехники в Арктике: опыт Российской Федерации // Горный информационно-аналитический бюллетень. — 2022. — № 10-2. — С. 24—38. DOI: 10.25018/0236_1493_2022_102_0_24.
+      </li>
+      <li>
+        Способ дистанционного измерения толщины льда, способ дистанционного измерения прочности льда, устройство для дистанционного измерения толщины льда, устройство для дистанционного измерения прочности льда и дистанционный измерительный модуль: пат. RU 2017110697 A : заявл. 30.03.2017; опубл. 01.10.2018.
+      </li>
+      <li>
+        Сайт: magazine.neftegaz — 
+        <a href="https://magazine.neftegaz.ru/articles/arktika/505550-osvoenie-arktiki-problemy-i-resheniya" target="_blank" rel="noopener">
+          https://magazine.neftegaz.ru/articles/arktika/505550-osvoenie-arktiki-problemy-i-resheniya
+        </a> (дата обращения 10.03.2025).
+      </li>
+    </ol>
+  </div>
 
   <footer>© 2025 Команда ШП-11</footer>
+
+  <script>
+    const nav = document.querySelector('.navbar');
+    const toggle = document.querySelector('.menu-toggle');
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
 </body>
 </html>
