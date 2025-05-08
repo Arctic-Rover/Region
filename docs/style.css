@@ -1,161 +1,19 @@
-/* -------------------------------------
-   Переменные и сбросы
-------------------------------------- */
-:root {
-  --clr-header-bg: #0d0d0d;
-  --clr-text-light: #ffffff;
-  --clr-primary: #4e9efc;
-  --clr-accent: #ff6b6b;
-  --clr-intro-bg: #3f66cc;
-  --clr-body-bg: #f4f4f4;
-  --header-height: 60px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-* {
-  margin: 0; padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Press Start 2P', monospace;
-  background: var(--clr-body-bg);
-  color: #222;
-  line-height: 1.4;
-  padding-top: var(--header-height);
-}
-
-/* -------------------------------------
-   Шапка и навигация
-------------------------------------- */
-header {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: var(--header-height);
-  background: var(--clr-header-bg);
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-}
-
-.header__inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
-  height: 100%;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.logo-text {
-  color: var(--clr-text-light);
-  font-size: 1rem;
-}
-
-nav {
-  position: relative;
-}
-
-.nav__list {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
-
-.nav__list li a {
-  color: var(--clr-text-light);
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.2s;
-}
-
-.nav__list li a:hover {
-  color: var(--clr-accent);
-}
-
-/* гамбургер - скрыт на десктопе */
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 4px;
-}
-.nav-toggle span {
-  display: block;
-  width: 25px; height: 3px;
-  background: var(--clr-text-light);
-}
-
-/* мобильная версия */
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: flex;
-  }
-  .nav__list {
-    position: absolute;
-    top: var(--header-height);
-    right: 0;
-    flex-direction: column;
-    background: var(--clr-header-bg);
-    width: 200px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-  .nav__list.open {
-    max-height: 400px;
-  }
-}
-
-/* -------------------------------------
-   Герой-секция
-------------------------------------- */
-.hero {
-  height: calc(100vh - var(--header-height) - 60px);
-  background: url('images/hero.jpg') center/cover no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.hero__text {
-  margin-left: 2rem;
-  color: var(--clr-text-light);
-  font-size: 3rem;
-  line-height: 1.2;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-}
-
-/* -------------------------------------
-   Интро-полоса
-------------------------------------- */
-.intro-bar {
-  background: var(--clr-intro-bg);
-  color: var(--clr-text-light);
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.85rem;
-}
-
-/* -------------------------------------
-   Контент и футер
-------------------------------------- */
-.container {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-footer {
-  background: #e0e0e0;
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 0.8rem;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; background:#111; color:#eee; line-height:1.6; }
+header { background:#222; }
+nav { max-width:1200px; margin:auto; padding:1rem; display:flex; align-items:center; }
+nav .logo { font-family:'Press Start 2P'; color:#5ea7ff; font-size:1rem; text-decoration:none; flex:1; }
+nav ul { list-style:none; display:flex; }
+nav ul li + li { margin-left:1.5rem; }
+nav a { color:#eee; text-decoration:none; font-size:0.9rem; }
+.hero { background:url('../images/hero.jpg') center/cover no-repeat; height:60vh; display:flex; align-items:center; padding-left:4%; }
+.hero h1 { font-family:'Press Start 2P'; color:#fff; font-size:2rem; text-shadow:0 0 10px rgba(0,0,0,0.7); }
+.section-blue { background:#5ea7ff; color:#fff; text-align:center; padding:2rem; }
+.content { max-width:1000px; margin:2rem auto; padding:0 1rem; }
+.content h2 { color:#5ea7ff; margin-bottom:1rem; }
+.content h3 { color:#4da6ff; margin-top:1.5rem; }
+.content p, .content ul { margin-bottom:1rem; }
+.content ul { padding-left:1.2rem; }
+footer { background:#222; color:#777; text-align:center; padding:1rem; font-size:0.8rem; }
