@@ -164,7 +164,7 @@ footer {
 /* на экранах до 768px увеличиваем базовый размер шрифта в 2 раза */
 @media only screen and (max-width: 768px) {
     html {
-      font-size: 200%;           /* теперь 1rem == 2 * браузерного значения */
+      font-size: 150%;           /* теперь 1rem == 2 * браузерного значения */
       -webkit-text-size-adjust: none; /* отключить авто-подстройку на iOS */
     }
   }
