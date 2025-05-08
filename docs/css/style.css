@@ -17,3 +17,7 @@ nav a { color:#eee; text-decoration:none; font-size:0.9rem; }
 .content p, .content ul { margin-bottom:1rem; }
 .content ul { padding-left:1.2rem; }
 footer { background:#222; color:#777; text-align:center; padding:1rem; font-size:0.8rem; }
+  
+a:hover {
+text-decoration: underline;
+}  
