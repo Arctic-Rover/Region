@@ -161,11 +161,12 @@ footer {
   font-size: 0.8rem;
 }
 
-/* на экранах до 768px увеличиваем базовый размер шрифта в 2 раза */
-@media only screen and (max-width: 768px) {
+/* Для устройств с «грубым» указателем (чаще всего — тач-скрин) */
+@media (pointer: coarse) {
     html {
-      font-size: 150%;           /* теперь 1rem == 2 * браузерного значения */
-      -webkit-text-size-adjust: none; /* отключить авто-подстройку на iOS */
+      font-size: 150%;
+      -webkit-text-size-adjust: none; /* отключаем автоподстройку шрифта на iOS */
     }
   }
+  
   
