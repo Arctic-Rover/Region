@@ -2,31 +2,64 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>АРКТИКАХОД — Аннотация</title>
+  <title>АРКТИКАХОД — Главная</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>АРКТИКАХОД</h1>
+    <div class="container header__inner">
+      <div class="logo">
+        <!-- Ваш логотип -->
+        <img src="images/logo.png" alt="Логотип" height="40">
+        <span class="logo-text">АРКТИКАХОД</span>
+      </div>
+      <nav>
+        <ul class="nav__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="team.html">О команде</a></li>
+          <li><a href="introduction.html">Введение</a></li>
+          <li><a href="org_stage.html">Орг. этап</a></li>
+          <li><a href="tech_stage.html">Тех. этап</a></li>
+          <li><a href="experiment.html">Эксперимент</a></li>
+          <li><a href="conclusion.html">Заключение</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle nav">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
   </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="team.html">О команде</a></li>
-      <li><a href="introduction.html">Введение</a></li>
-      <li><a href="org_stage.html">Орг. этап</a></li>
-      <li><a href="tech_stage.html">Тех. этап</a></li>
-      <li><a href="experiment.html">Эксперимент</a></li>
-      <li><a href="conclusion.html">Заключение</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h2>Аннотация</h2>
-    <p>Проект «АВТОНОМНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ РОБОТ ДЛЯ АРКТИКИ — АРКТИКАХОД» разработан для комплексного и автономного проведения научных исследований в суровых климатических условиях Арктики. Робот предназначен для мониторинга льда, флоры и фауны, и передачи данных учёным без риска для жизни человека.</p>
-    <img src="images/arctic_map.jpg" alt="Арктика на карте мира">
+
+  <section class="hero">
+    <div class="hero__text">
+      Этот сайт  
+      <br>о космических  
+      <br>аппаратах
+    </div>
+  </section>
+
+  <section class="intro-bar">
+    <p>На этом сайте Вы можете почитать о космических технологиях, посмотреть их картинки и при необходимости отправить нам вопрос, интересующий Вас.</p>
+  </section>
+
+  <main class="container">
+    <!-- Ваш контент -->
   </main>
+
   <footer>
-    <p>© 2025 Команда «ШП-11»</p>
+    <div class="container">
+      © 2025 Команда «ШП-11»
+    </div>
   </footer>
+
+  <script>
+    // простой скрипт для мобильного гамбургера
+    const btn = document.querySelector('.nav-toggle');
+    const ul  = document.querySelector('.nav__list');
+    btn.addEventListener('click', ()=> ul.classList.toggle('open'));
+  </script>
 </body>
 </html>
