@@ -21,3 +21,11 @@ footer { background:#222; color:#777; text-align:center; padding:1rem; font-size
 a:hover {
 text-decoration: underline;
 }  
+.content img {
+    max-width: 50vw;  /* не более 50% ширины окна просмотра */
+    width: 100%;      /* при 50vw картинка будет занимать всю доступную область */
+    height: auto;     /* сохраняем пропорции */
+    display: block;   /* чтобы margin: auto работал */
+    margin: 1rem auto;/* центрируем и даём отступы сверху/снизу */
+  }
+  
